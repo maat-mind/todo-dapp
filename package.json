@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "lite-server": "^2.6.1"
+  },
+  "name": "dapp-todo",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev":"lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

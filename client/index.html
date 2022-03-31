@@ -22,23 +22,37 @@
                     <h1>Dapp</h1>
                     <h6 class="text-muted">Decentralized Task App</h6>
                     <span>Wallet</span>
-                    <span>0x152b14a564f12da5s</span>
+                    <span id="account"></span>
                 </div>
 
-                <form class="card card-body bg-dark rounded-0" action="">
+                <form class="card card-body bg-dark rounded-0"
+                      action=""
+                      id="taskForm">
                     <h4>Save Task</h4>
-                    <input class="form-control bg-dark text-white rounded-0 border-0 my-4" type="text" placeholder="Write a new task">
-                    <textarea rows="2" class="form-control bg-dark text-white rounded-0 border-0 my-4"></textarea>
+                    <input class="form-control bg-dark text-white rounded-0 border-0 my-4"
+                           type="text"
+                           name="title"
+                           placeholder="Write a new task">
+                    <textarea rows="2"
+                              name="description"
+                              class="form-control bg-dark text-white rounded-0 border-0 my-4"
+                              placeholder="I have to do ..."></textarea>
+                    <button class="btn btn-primary">
+                        Save
+                    </button>
                 </form>
 
             </div>
             <div class="col-md-8">
-                <div class="card bg-dark">
-                    <h1>Task list</h1>
+                <div id="taskList">
                 </div>
             </div>
         </div>
     </div>
+    <!-- Scripts -->
+    <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
 </body>
 
 </html>
